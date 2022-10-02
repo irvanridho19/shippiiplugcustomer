@@ -1,0 +1,54 @@
+/*
+Custom Css
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* color
+ */
+:root {
+    --primary: #2bb673;
+    --secondary: #f7941c;
+}
+
+.btn-shippiiplug {
+    background-color: var(--primary) !important;
+    color: #fefefe !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    font-weight: 500 !important;
+}
+
+.star-rating {
+  line-height: 32px;
+  font-size: 1.25em;
+}
+
+.star-rating .fa-star {
+  color: gold;
+}
+
+section.merchant-information {
+  padding: 72px 0;
+}
+
+section.merchant-information .merchant-thumbnail p {
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+/* quantity custom */
+#myform {
+  padding: 20px 0;
+}
+
+.qty {
+    text-align: center;
+    font-weight: 800;
+}
