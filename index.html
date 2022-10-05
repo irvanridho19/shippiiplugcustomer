@@ -16,6 +16,10 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- Load fonts style after rendering the layout styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 </head>
@@ -47,23 +51,56 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <table class="show-cart table">
-                                <div class="cart-content">
-
-                                </div>
+                            <table class="table" id="cart">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product Image</th>
+                                        <th scope="col">Product Name</th>
+                                        <th scope="col">Colour</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Unit Price</th>
+                                        <th scope="col">Total Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <img src="./assets/img/dummy-product-1.jpeg" alt="Product">
+                                        </th>
+                                        <td>Zara T-shirt</td>
+                                        <td>White</td>
+                                        <td>Large</td>
+                                        <td>2</td>
+                                        <td>R200</td>
+                                        <td>R400</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <img src="./assets/img/dummy-product-2.jpeg" alt="Product">
+                                        </th>
+                                        <td>Nike Shoes</td>
+                                        <td>Red</td>
+                                        <td>42</td>
+                                        <td>1</td>
+                                        <td>R500</td>
+                                        <td>R500</td>
+                                    </tr>
+                                </tbody>
                             </table>
                             <div class="text-center">
                                 <button class="clear-cart btn btn-danger">
                                     Empty Cart
                                 </button>
                             </div>
-                            <div class="text-center lead title-total">Total: <span class="total-price"></span>
+                            <div class="text-center lead title-total">Total: <span class="total-price">R900</span>
                             </div>
+                            <p>(Excludes Delivery fees)</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue
                                 Shopping</button>
-                            <a href="./components/order.html"><button type="button"
+                            <a href="checkout.html"><button type="button"
                                     class="btn btn-primary order-btn">Checkout</button></a>
                         </div>
                     </div>
@@ -84,7 +121,7 @@
                         <p>Merchant Name</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 my-2">
                     <p>Service Rating</p>
                     <div class="star-rating">
                         <span data-rating="1"><i class="fa fa-fw fa-star"></i></span>
@@ -95,7 +132,7 @@
                         <input type="hidden" name="whatever1" class="rating-value" value="2.56">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 my-2">
                     <p>Product Quality</p>
                     <div class="star-rating">
                         <span data-rating="1"><i class="fa fa-star"></i></span>
@@ -106,7 +143,7 @@
                         <input type="hidden" name="whatever1" class="rating-value" value="2.56">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 my-2">
                     <p>Trustworthiness</p>
                     <div class="star-rating">
                         <span data-rating="1"><i class="fa fa-star"></i></span>
@@ -130,7 +167,7 @@
                     <h2 class="h1">Products</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row product-show">
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card">
                         <a href="shop-single.html">
@@ -140,7 +177,7 @@
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li class="text-muted text-right">R240.00</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Zara T-Shirt</a>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Zara T-shirt</a>
                             <div class="py-3">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Select Color</option>

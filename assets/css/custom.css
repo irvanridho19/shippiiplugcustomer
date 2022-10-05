@@ -6,6 +6,7 @@ Custom Css
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #fefefe;
 }
 
 /* color
@@ -13,6 +14,11 @@ body {
 :root {
     --primary: #2bb673;
     --secondary: #f7941c;
+    --black: #333740;
+    --white: #fefefe;
+    --grey-1: #989898;
+    --grey-2: #909090;
+
 }
 
 .btn-shippiiplug {
@@ -39,8 +45,9 @@ section.merchant-information {
 section.merchant-information .merchant-thumbnail p {
   padding: 20px 0;
   font-size: 16px;
+  color: var(--black);
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 600 !important;
 }
 
 /* quantity custom */
@@ -51,4 +58,78 @@ section.merchant-information .merchant-thumbnail p {
 .qty {
     text-align: center;
     font-weight: 800;
+}
+
+@media (max-width: 576px) {
+  section.merchant-information {
+    text-align: center;
+  }
+}
+
+#cart img {
+  width: 56px;
+}
+
+#cart .title-total {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 20px 0;
+  color: var(--grey-1);
+}
+
+#cart .total-price {
+  font-size: 24px;
+  line-height: 36px;
+  color: #333740;
+  font-weight: 500;
+}
+
+#cart p {
+  font-size: 12px !important;
+  line-height: 20px !important;
+  color: var(--grey-2) !important;
+  font-weight: 300 !important;
+  text-align: center !important;
+}
+
+section.checkout {
+  padding: 58px 0;
+}
+
+.total-checkout {
+  color: var(--black);
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  text-align: right;
+  line-height: 36px;
+}
+
+.total-checkout p {
+  color: var(--grey-1);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.buttons {
+  padding: 36px 0;
+}
+
+section.confirmation {
+  padding: 48px 0;
+}
+
+section.confirmation .card {
+  margin: 24px 0;
+}
+
+.greet {
+  color: var(--black) !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+}
+
+.desc {
+  color: var(--grey-1);
+  font-size: 20px !important;
+  line-height: 24px !important;
 }

@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Zara T-Shirt",
+        "price": 420,
+        "image": {
+          "fields": { "file": { "url": "../assets/img/dummy-product-1.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Nike Shoes",
+        "price": 800,
+        "image": {
+          "fields": { "file": { "url": "../assets/img/dummy-product-2.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "White Shirt",
+        "price": 240,
+        "image": {
+          "fields": { "file": { "url": "../assets/img/dummy-product-3.jpg" } }
+        }
+      }
+    }
+  ]
+}
