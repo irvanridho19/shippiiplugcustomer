@@ -133,3 +133,7 @@ section.confirmation .card {
   font-size: 20px !important;
   line-height: 24px !important;
 }
+
+section.merchant-information .merchant-thumbnail p {
+  font-weight: 800 !important;
+}
