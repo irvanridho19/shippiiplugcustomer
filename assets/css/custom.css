@@ -137,3 +137,11 @@ section.confirmation .card {
 section.merchant-information .merchant-thumbnail p {
   font-weight: 800 !important;
 }
+
+#cart {
+  z-index: 90000;
+}
+
+#emptycart {
+  z-index: 90009;
+}
