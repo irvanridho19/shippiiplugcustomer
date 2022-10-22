@@ -67,24 +67,30 @@ section.merchant-information .merchant-thumbnail p {
 }
 
 #cart img {
-  width: 56px;
+  width: 84px;
 }
 
-#cart .title-total {
-  font-size: 14px;
-  line-height: 20px;
-  padding: 20px 0;
-  color: var(--grey-1);
+.cart-page {
+  padding: 96px 0;
 }
 
-#cart .total-price {
-  font-size: 24px;
+.cart-page .title-total {
+  font-size: 24px !important;
   line-height: 36px;
-  color: #333740;
-  font-weight: 500;
+  padding: 20px 0;
+  font-weight: 800 !important;
+  color: var(--black);
 }
 
-#cart p {
+.pop-up-empty {
+  font-size: 12px;
+  padding: 10px 0;
+  color: var(--grey-1);
+  line-height: 24px;
+  font-weight: 300 !important;
+}
+
+.cart-page p {
   font-size: 12px !important;
   line-height: 20px !important;
   color: var(--grey-2) !important;
@@ -136,12 +142,4 @@ section.confirmation .card {
 
 section.merchant-information .merchant-thumbnail p {
   font-weight: 800 !important;
-}
-
-#cart {
-  z-index: 90000;
-}
-
-#emptycart {
-  z-index: 90009;
 }
