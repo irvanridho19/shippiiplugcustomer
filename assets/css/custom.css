@@ -82,6 +82,10 @@ section.merchant-information .merchant-thumbnail p {
   color: var(--black);
 }
 
+.button-cart {
+  padding: 56px 0;
+}
+
 .pop-up-empty {
   font-size: 12px;
   padding: 10px 0;
